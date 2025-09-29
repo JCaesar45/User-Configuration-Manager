@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Configuration Manager</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>User Configuration Manager</h1>
+      <p>Manage your application settings with ease</p>
+    </header>
+
+    <div class="content">
+      <div class="settings-container">
+        <div class="settings-panel">
+          <h2>Add Setting</h2>
+          <form id="add-form">
+            <div class="form-group">
+              <label for="add-key">Setting Key</label>
+              <input type="text" id="add-key" placeholder="e.g., theme" required>
+            </div>
+            <div class="form-group">
+              <label for="add-value">Setting Value</label>
+              <input type="text" id="add-value" placeholder="e.g., dark" required>
+            </div>
+            <button type="submit" class="btn">Add Setting</button>
+            <div id="add-message" class="message"></div>
+          </form>
+        </div>
+
+        <div class="settings-panel">
+          <h2>Update Setting</h2>
+          <form id="update-form">
+            <div class="form-group">
+              <label for="update-key">Setting Key</label>
+              <input type="text" id="update-key" placeholder="e.g., theme" required>
+            </div>
+            <div class="form-group">
+              <label for="update-value">New Value</label>
+              <input type="text" id="update-value" placeholder="e.g., light" required>
+            </div>
+            <button type="submit" class="btn">Update Setting</button>
+            <div id="update-message" class="message"></div>
+          </form>
+        </div>
+
+        <div class="settings-panel">
+          <h2>Delete Setting</h2>
+          <form id="delete-form">
+            <div class="form-group">
+              <label for="delete-key">Setting Key</label>
+              <input type="text" id="delete-key" placeholder="e.g., theme" required>
+            </div>
+            <button type="submit" class="btn">Delete Setting</button>
+            <div id="delete-message" class="message"></div>
+          </form>
+        </div>
+
+        <div class="settings-display">
+          <h2>Current Settings</h2>
+          <div id="settings-output" class="settings-output"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
